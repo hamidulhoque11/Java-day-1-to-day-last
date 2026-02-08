@@ -44,7 +44,7 @@ class Main {
 </pre>
 </div>
 
-**Data Type And Variabl**
+**Data Type And Variable**
 <div style="overflow-x:auto;">
 <pre>
 <code>
