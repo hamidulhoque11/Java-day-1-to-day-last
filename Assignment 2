@@ -1,0 +1,22 @@
+/*Assignmennt 2
+Variable and dataType
+*/
+class Product {
+    public static void main(String[] args) {
+       int id;
+       id=101;
+       String title;
+       title= "iphone15";
+       double price;
+       price = 1895;
+       String description;
+        description="perfect product with best image quality";
+       char category;
+        category='A';
+        System.out.println("ID = "+id);
+        System.out.println("Title = "+title);
+        System.out.println("Price = "+price);
+        System.out.println("Description ="+description);
+        System.out.println("Category = "+category);
+    }
+}
