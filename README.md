@@ -168,4 +168,45 @@ class AssignmentOperator {
 </code>
 </pre>
 </div>
+The Area of triangle - 
+
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      double area, base,height;
+      System.out.print("Enter the triangle height:");
+      height=sc.nextDouble();
+      System.out.print("Enter the triangle base:" );
+      base=sc.nextDouble();
+       area=0.5*height*base;
+      System.out.printf("the area of triangle is =%.2f",area);
+    }
+}
+</code>
+</pre>
+</div>
+Celcius to Fahrenheit--
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class FindFahrenheit {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      double celsius, fahrenheit;
+      System.out.print("Enter the Celsius:");
+      celsius=sc.nextDouble();
+       fahrenheit=1.8*celsius+32;
+      System.out.printf("The Fahrenheit is =%.2f",fahrenheit);
+    }
+}
+</code>
+</pre>
+</div>
+
+
 
