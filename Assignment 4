@@ -1,0 +1,17 @@
+
+//Assignment 4
+import java.util.Scanner;
+class inputFromUser {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+          int productPrice,numberofInstallment;
+          double installmentPerMonth;
+          System.out.print("Product price:");
+          productPrice = sc.nextInt();
+          System.out.print("Number of Installment: ");
+          numberofInstallment = sc.nextInt();
+          installmentPerMonth=(double)productPrice/numberofInstallment;
+          System.out.printf("In %d Month, you have to pay %.2f$ per Month",numberofInstallment,installmentPerMonth);
+         
+    }
+}
