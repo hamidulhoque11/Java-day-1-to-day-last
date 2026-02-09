@@ -74,6 +74,50 @@ public class Datatype {
 </pre>
 </div>
 
+---------#DAY2------
+-------------09-feb-2026-----------
+         Format Specifier-
 
+
+
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class FormatSpecifier {
+    public static void main(String[] args) {
+        int i=100;
+        System.out.printf("Integer i= %d\n",i);
+        short s=200;
+        System.out.printf("Short s= %d\n",s);
+        char c='H';
+        System.out.printf("Character c= %c\n",c);
+        float f=10f;
+        System.out.printf("Float f= %.2f\n",f);
+        double d=30;
+        System.out.printf("Double d= %.2f\n",d);
+         boolean b=false;
+        System.out.printf("Boolean b= %b\n",b);
+      }
+}
+</code>
+</pre>
+</div>
+Input From use -Scanner
+
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class inputFromUser {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your name:");
+        String name=sc.nextLine();
+        System.out.println("welcome "+name);
+    }
+}
+</code>
+</pre>
+</div>
 
 
