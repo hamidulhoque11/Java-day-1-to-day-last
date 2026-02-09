@@ -119,5 +119,27 @@ class inputFromUser {
 </code>
 </pre>
 </div>
+Arithmetic Operator-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+public class arithmaticOperator {
+   public static void main(String[]args) {
+ int num1=20, num2=10, result;
+        result = num1+num2 ;
+        System.out.println("+ operator ="+result);
+       result = num1-num2 ;
+       System.out.println("- operator ="+result);
+       result = num1*num2 ;
+       System.out.println("* operator ="+result);
+       result = num1/num2 ;
+       System.out.println("/ operator ="+result);
+       result = num1%num2 ;
+       System.out.println("% operator ="+result);
+   }
+}
+</code>
+</pre>
+</div>
 
 
