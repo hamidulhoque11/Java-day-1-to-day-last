@@ -1,0 +1,26 @@
+//Assignment 3
+import java.util.Scanner;
+class inputFromUser {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+          
+             String id ,price,name,description,category;
+        System.out.print("Enter Product ID: ");
+         id=sc.nextLine();
+        System.out.print("Enter Product name: ");
+        name=sc.nextLine();
+        System.out.print("Enter Product Price: ");
+         price=sc.nextLine();
+        System.out.print("Enter Product Description: ");
+        description=sc.nextLine();
+        System.out.print("Enter Product Category: ");
+        category=sc.nextLine();
+        
+            System.out.println("Product ID : "+id);
+            System.out.println("Product Name : "+name);
+            System.out.println("Product Price : "+price);
+            System.out.println("Product Description : "+description);
+            System.out.println("Product Category : "+category);
+        
+    }
+}
