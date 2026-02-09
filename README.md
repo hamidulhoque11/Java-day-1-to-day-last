@@ -168,6 +168,7 @@ class AssignmentOperator {
 </code>
 </pre>
 </div>
+--------------##Day3--------10-02-2026
 The Area of triangle - 
 
 <div style="overflow-x:auto;">
