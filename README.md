@@ -256,6 +256,28 @@ class controlStatement {
 </pre>
 </div>
 
+Find Even and Odd value-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class EvenAndOdd {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("--Chack the Even and odd value--");
+        System.out.print("Enter any value:");
+        int i=sc.nextInt();
+        if(i%2==0){
+            System.out.printf("%d Even value",i);
+        }else if(i%2 !=0) {
+            System.out.printf("%d is odd value",i);
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
 
 
 
