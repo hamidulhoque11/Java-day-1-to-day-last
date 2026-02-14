@@ -1,0 +1,21 @@
+// Logical or assignment
+// step 1: Print "Do you love java? "
+// step 2: take user input y / Y / n / N
+// step 3: if user input y / Y then print you are a java lover
+// step 4: if user input n / N then print you are not a java lover
+//Assignment 7
+import java.util.Scanner;
+class Assignment7 {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        System.out.print("Do you Love Java?:");
+        String inp =sc.nextLine();
+        if(inp.equalsIgnoreCase("y")|| inp.equalsIgnoreCase("yes") || inp.equalsIgnoreCase("Y") || inp.equalsIgnoreCase("YES")){
+            System.out.println("You are a java lover");
+        }else if (inp.equalsIgnoreCase("n")|| inp.equalsIgnoreCase("N")||inp.equalsIgnoreCase("NO")||inp.equalsIgnoreCase("no")){
+            System.out.println("you are not a java lover");
+        }else{
+            System.out.println("Write yes or no!");
+        }
+    }
+}
