@@ -277,6 +277,51 @@ class EvenAndOdd {
 </code>
 </pre>
 </div>
+Vawel or Consonant
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+import java.util.Scanner;
+class vowelConsonant {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Chack a Character Vowel or consonant ");
+        System.out.print("Enter any charater: ");
+        char c=sc.next().charAt(0);
+        if(c == 'a' ||c=='e'||c=='i'|| c=='o'|| c=='u' || c=='A' || c== 'E' ||c=='I'|| c=='O' ||c=='U'  ){
+            System.out.printf("%c is Vowel",c);
+        }else {
+             System.out.printf("%c is Consonant",c);
+        }
+    }
+}
+</code>
+</pre>
+</div>
+Capital and Small letter
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class scallCapital {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Chack a Character Small or Capital ");
+        System.out.print("Enter a charater: ");
+        char c=sc.next().charAt(0);
+        if (c >= 'a' && c<='z'){
+            System.out.println("Small");
+        }else if(c>='A' && c<='Z'){
+            System.out.println("Capital");
+        }else{
+            System.out.println("Enter a Character");
+        }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
