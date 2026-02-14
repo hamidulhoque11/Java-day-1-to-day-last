@@ -1,6 +1,5 @@
 # Java-day-1-to-day-last
 
-##-----------Day 1----------8 feb 2026
 <div style="overflow-x:auto;">
 <pre>
 <code>
@@ -73,9 +72,6 @@ public class Datatype {
 </code>
 </pre>
 </div>
-
----------#DAY2------
--------------09-feb-2026-----------
          Format Specifier-
 
 
@@ -168,7 +164,6 @@ class AssignmentOperator {
 </code>
 </pre>
 </div>
---------------##Day3--------10-02-2026
 The Area of triangle - 
 
 <div style="overflow-x:auto;">
