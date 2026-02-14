@@ -208,6 +208,61 @@ class FindFahrenheit {
 </code>
 </pre>
 </div>
+Unary operator-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+//Unary operator
+class unaryOpetator {
+    public static void main(String[] args) {
+        int a =10;
+        int result;
+    result= a++;//increament
+    System.out.println(result);//10
+    result=--a;// decrement
+        System.out.println(result);//10
+        result = -a;// -operator
+        System.out.println(result);//-10
+        result = +a;// +operator
+        System.out.println(result);//10
+        result = ++a;
+        System.out.println(result);//11
+        result = -a;
+        System.out.println(result);//-11
+        result = +a;
+        System.out.println(result);//11
+    }
+}
+</code>
+</pre>
+</div>
+#Relational Operator:
+     
+ ##Contro Statement(if Else):-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class controlStatement {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Check the vlue:");
+        int i =sc.nextInt();
+        if(i>0){
+            System.out.println(i+" is greater then Zero");
+        }else if (i<0){
+            System.out.println(i+" is less then zero");
+        }else{
+            System.out.println(i+" is Equal to Zero");
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
+
+
 
 
 
