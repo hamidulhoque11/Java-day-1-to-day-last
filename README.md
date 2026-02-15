@@ -364,6 +364,52 @@ class switchCase{
 </code>
 </pre>
 </div>
+##Conditional Operator-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class conditionalOperator{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a first Value:");
+        int i=sc.nextInt();
+        System.out.print("Enter a Second Value:");
+        int j=sc.nextInt();
+         int large=i>j?i:j;
+        System.out.println("Large value is = "+large);  
+    }
+}
+</code>
+</pre>
+</div>
+##Bitwise Operator-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class bitwiseOperator{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a first Value:");
+        int i=sc.nextInt();
+        System.out.print("Enter a Second Value:");
+        int j=sc.nextInt();
+        int result=i&j;
+        System.out.printf("%d Binary AND %d = %d\n",i,j,result);
+         result=i|j;
+        System.out.printf("%d Binary OR %d = %d\n",i,j,result);
+         result=i^j;
+        System.out.printf("%d Binary EXOr %d = %d\n",i,j,result);
+         result=i>>j;
+        System.out.printf("%d >> Right shift %d = %d\n",i,j,result);
+         result=i<<j;
+        System.out.printf("%d <<left shift %d = %d\n",i,j,result);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
