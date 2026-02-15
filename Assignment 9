@@ -1,0 +1,32 @@
+
+/* Assignment 9
+Qustion
+switch assignment: call center
+1. if user select option 1 then set language bengali
+2. if user select option 2 then set language hindi
+ 3.if user select option 3 then set language urdu
+ 4.for any other option set language english 
+*/
+//Answer--
+import java.util.Scanner;
+class callCenter{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("--Select You Language(1,2,3)-\n 1.Bengali \n 2.Hindi \n 3.Urdu \n 4.English ");
+        System.out.print("Choose a digit:");
+        String digit=sc.nextLine();
+        switch(digit){
+            case "1":
+                System.out.println("--Selected Language is Bengali--");
+                break;
+                case "2":
+                System.out.println("--Selected Language is Hindi--");
+                break;
+                case "3":
+                System.out.println("--Selected Language is Urdu--");
+                break;
+             default:
+             System.out.println("--Selected Language is English--");
+        }
+    }
+}
