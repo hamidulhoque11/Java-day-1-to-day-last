@@ -403,10 +403,10 @@ class bitwiseOperator{
         System.out.printf("%d Binary EXOr %d = %d\n",i,j,result);
          result=i>>j;
         System.out.printf("%d >> Right shift %d = %d\n",i,j,result);
-         result=i<<j;
-        System.out.printf("%d <<left shift %d = %d\n",i,j,result);
-    }
-}
+             result=i << j;
+        System.out.printf("%d << left shift %d = %d\n",i,j,result);
+            }
+            }
 </code>
 </pre>
 </div>
