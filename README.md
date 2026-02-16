@@ -410,6 +410,53 @@ class bitwiseOperator{
 </code>
 </pre>
 </div>
+## Math Class--
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+public class mathClass {
+    public static void main(String[]args) {
+        Scanner sc=new Scanner(System.in);
+        int x,y;
+        System.out.print("Enter a Value:");
+        x=sc.nextInt();
+        System.out.print("Enter a Value:");
+        y=sc.nextInt();
+        double pi=Math.PI;
+        System.out.printf("pi = %.4f \n",pi);
+    int abs= Math.abs(x);
+        System.out.println("Absulate value ="+abs);
+    System.out.println("Addition= "+Math.addExact(x,y));
+        System.out.println("Multiply= "+Math.multiplyExact(x,y));
+    }
+}
+</code>
+</pre>
+</div>
+##Control Statement 
+            
+For Loop
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class forLoop {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Write Hamidul 10 times increament:");
+   for( int i=1; i<=10; i++){
+        System.out.println(i+". Hamidul");
+    }
+    System.out.println("Write Hamidul 10 times decreament:");
+    for( int j=10; j>=1; j--){
+        System.out.println(j+". Hamidul");
+    }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
