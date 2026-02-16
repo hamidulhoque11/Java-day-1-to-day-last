@@ -457,7 +457,29 @@ class forLoop {
 </code>
 </pre>
 </div>
-
+##While Loop
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class whileLoop{
+    public static void main(String[]args){
+        System.out.println("Write hamidul 10 times by while loop(increament)");
+        int i=1;
+        while (i<=10){
+            System.out.println(i+"hamidul");
+            i++;//Increament
+        }
+        System.out.println("Write hamidul 10 times by while loop(Decreament)");
+        int j=10;//intialization
+        while (j>=1){//Condition
+            System.out.println(j+"hamidul");
+            j--;//decreament
+        }
+         }
+}
+</code>
+</pre>
+</div>
 
 
 
