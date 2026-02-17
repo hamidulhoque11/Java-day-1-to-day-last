@@ -497,6 +497,41 @@ class doWhileLoop {
 </pre>
 </div>
 
+Control Statement-Jump: Break
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class jumpBreak {
+    public static void main(String[] args) {
+       for (int i=0;i<=100;i++){
+           if(i==10){
+               break;
+           }
+           System.out.println(i);
+       }
+    }
+}
+</code>
+</pre>
+</div>
+Control Statement-Jump: Continue
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class jumpContinue {
+    public static void main(String[] args) {
+       for (int i=0;i<=100;i++){
+           if(i==10){
+               continue;// if condition is true Back to loop
+           }
+           System.out.println(i);//when if condition is true, dosent work that
+       }
+    }
+}
+</code>
+</pre>
+</div>
+
 
 
 
