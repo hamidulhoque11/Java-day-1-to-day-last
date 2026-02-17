@@ -1,0 +1,16 @@
+//Find Factorial of n using any loop
+import java.util.Scanner;
+class Assignment11 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        int result=1;
+        System.out.print("Enter your Factorial(!) value:");
+        n=sc.nextInt();
+        System.out.print("Your value is "+n+"!\n");
+       for (int i=1;i<=n;i++){
+         result=result*i;
+           }
+      System.out.println(n+"! is = "+result);
+       }
+    }
