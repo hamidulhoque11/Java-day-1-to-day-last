@@ -531,6 +531,32 @@ class jumpContinue {
 </code>
 </pre>
 </div>
+Problem solved using loop
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class newProb {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int m,n;
+        int result=0;
+        System.out.print("Enter a Strting value:");
+        m=sc.nextInt();
+        System.out.print("Enter a ending value:");
+        n=sc.nextInt();
+    for (int i=m;i<=n;i++){
+        int mul=i*i;
+        System.out.print(i+"x"+i+"="+mul+" ");
+           result=result+mul;
+        } 
+         System.out.println();
+      System.out.println("sum of square value is= "+result);
+       }
+    }
+</code>
+</pre>
+</div>
 
 
 
