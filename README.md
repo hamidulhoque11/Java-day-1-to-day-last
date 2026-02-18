@@ -557,6 +557,56 @@ class newProb {
 </code>
 </pre>
 </div>
+Series:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Series {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int result=1;
+        System.out.print("Enter any value:");
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){//distance is 1
+            System.out.println(i);
+            result=result*i;//1*2*3*...n
+        }
+        System.out.println("total value is= "+result);
+    }
+}
+</code>
+</pre>
+</div>
+Multiplication Table:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+    import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("which Multiplication table you want to see?");
+        System.out.print("Enter you fast table: ");
+        int f =sc.nextInt();
+        System.out.print("Enter you last : ");
+        int n =sc.nextInt();
+        System.out.println("your multi table "+f+" to "+n);
+        for(int i=f;i<=n;i++){
+            System.out.println("Multiplication table for "+i);
+            for(int j=1;j<=10;j++){
+                int result=i*j;
+                System.out.println(i+" X "+j+" = "+result);
+            }
+            System.out.println();
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
+
 
 
 
