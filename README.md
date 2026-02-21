@@ -605,6 +605,31 @@ class Main {
 </code>
 </pre>
 </div>
+Fibonacci Series-0,1,1,2,3,5,8
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class fibonacciSeries{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter any fibonacci value:");
+        int n=sc.nextInt();
+        int fast=0;
+        int sec=1;
+        int fibo;
+        System.out.print(fast+" "+sec);
+        for (int i=3;i<=n;i++){
+           fibo= fast+sec;
+           System.out.print(" "+fibo+" ");
+           fast=sec;
+           sec=fibo;
+        }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
