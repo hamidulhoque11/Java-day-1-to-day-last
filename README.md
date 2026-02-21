@@ -605,7 +605,45 @@ class Main {
 </code>
 </pre>
 </div>
-Fibonacci Series-0,1,1,2,3,5,8
+ Prime and Composite value-2,3,5,7,11..n  
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class primeComposite{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter any value:");
+        int n=sc.nextInt();
+        System.out.println("your n number is :"+n);
+        int count=0;
+        int countOne=0;
+        for (int i=1;i<=n;i++){
+            if(i==0||i==1){
+                countOne++;
+            }
+            for(int j=2;j<i;j++){
+              if (i%j==0){
+                  count++;
+              }
+            }if(countOne>0){
+                System.out.println(i+" Composite Number");
+            }
+            else if(count==0){
+                System.out.println(i+" prime number");
+            }else{
+                System.out.println(i+" Composite number");
+            }
+            count=0;
+            countOne=0;
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
+Fibonacci Series-0,1,1,2,3,5,8...n
 <div style="overflow-x:auto;">
 <pre>
 <code>
