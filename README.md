@@ -622,11 +622,12 @@ class primeComposite{
             if(i==0||i==1){
                 countOne++;
             }
-            for(int j=2;j<i;j++){
-              if (i%j==0){
+            for(int j=2;j < i //;j++)//remove doubble slash
+                             {
+                             if (i%j==0){
                   count++;
-              }
-            }if(countOne>0){
+              } 
+           } if ( countOne > 0){
                 System.out.println(i+" Composite Number");
             }
             else if(count==0){
