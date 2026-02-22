@@ -1,0 +1,19 @@
+//Assignment 13
+import java.util.Scanner;
+class fibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Find a Fibonacci value:");
+        int n =sc.nextInt();
+        int fast=1;
+        int second=1;
+        int fibo=0;
+        System.out.print(fast+" "+second+" ");
+        for(int i=3;i<=n;i++){
+            fibo=fast+second;
+            System.out.print(fibo+" ");
+            fast=second;
+            second=fibo;
+        }
+    }
+}
