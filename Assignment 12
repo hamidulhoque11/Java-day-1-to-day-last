@@ -1,0 +1,20 @@
+//Print sum of odd numbr of m-n
+import java.util.Scanner;
+class Assignment12 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int m,n;
+        int result=0;
+        System.out.print("Enter a vlue of m:");
+        m=sc.nextInt();
+        System.out.print("Enter a vlue of n:");
+        n=sc.nextInt();
+    for (int i=m;i<=n;i++){
+        if(i%2 ==0){
+            continue;
+        } 
+         result=result+i;
+           }
+      System.out.println("sum of odd number of m to n is = "+result);
+       }
+    }
