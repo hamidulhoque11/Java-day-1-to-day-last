@@ -669,6 +669,86 @@ class fibonacciSeries{
 </code>
 </pre>
 </div>
+problem solved Sum of Digit:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class SumofDigit {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Find the sum of digit");
+        System.out.println("Enter any digit :");
+        int n=sc.nextInt();
+        int sum=0;
+        int r;
+        int temp=n;
+        while(temp!=0){
+            r=temp%10;
+            sum=sum+r;
+            temp=temp/10;
+        }
+        System.out.println(n+" Sum = "+sum);
+    }
+}
+</code>
+</pre>
+</div>
+Problem solved Reversed:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class reversed {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Find the Reverse value");
+        System.out.println("Enter any value you want to reverse :");
+        int n=sc.nextInt();
+        int sum=0;
+        int r,temp;
+        temp=n;
+    while (temp!=0){
+        r=temp%10;
+        sum=sum*10+r;
+        temp=temp/10;
+    }
+    System.out.println(sum);
+    }
+}
+</code>
+</pre>
+</div>
+Problem : find out Palindrome value.
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Palindrome{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Check palindrome or not");
+        System.out.println("Enter any digit:");
+        int n=sc.nextInt();
+        int temp,r;
+        int sum=0;
+        temp=n;
+        while(temp!=0){
+            r=temp%10;
+            sum=sum*10+r;
+            temp=temp/10;
+             }
+        if(n==sum){
+            System.out.println(n+" is Plindrom value");
+        }else{
+            System.out.println(n+" is not Plindrom value");
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
 
 
 
