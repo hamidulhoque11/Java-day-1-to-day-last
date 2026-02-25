@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Assignment15 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter starting value:");
+        int m =sc.nextInt();
+        System.out.print("enter Ending value:");
+        int n =sc.nextInt();
+        int count=0;
+        for(int i=m;i<=n;i++){
+        int r,sum=0,power=1;
+        int temp=i;
+        while(temp!=0){
+            r=temp%10;
+            power=r*r*r;
+            sum=sum+power;
+            temp=temp/10;
+        }if(sum==i){
+            System.out.println(i+" Armstring value");
+            count++;
+        }else{
+            System.out.println(i+ " Not armstrong value");
+        }
+        }
+        System.out.println("total armstrong value are: "+count);
+        
+    }
+}
