@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Assignment16 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int count=0;
+        System.out.print("Enter your Username:");
+        String user=sc.nextLine();
+        System.out.print("Enter your Password:");
+        String pass=sc.nextLine();
+        for(int i=1;i<=10;i++){
+            if(user.equals("hamidul") && pass.equals("123")){
+               count++;
+               break;
+            }     
+            } 
+        if(count==0){
+            System.out.print("username/password is incorrect. Please try again");
+        }else{
+            System.out.print("welcome to the system");
+        }
+    }
+}
