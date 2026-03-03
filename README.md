@@ -769,6 +769,34 @@ class Main {
 </code>
 </pre>
 </div>
+Array-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr=new int[5];
+        arr[0]=7;
+        arr[1]=55;
+        arr[2]=2;
+        arr[3]=5;
+        arr[4]=1;
+         System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+        System.out.println(arr[3]);
+        System.out.println(arr[4]);
+      //  System.out.println(arr[5]); error
+        
+ int len=arr.length;
+        System.out.println("array size="+len);
+    }
+}
+</code>
+</pre>
+</div>
+
 
 
 
