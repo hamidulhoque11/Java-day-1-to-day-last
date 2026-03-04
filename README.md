@@ -796,6 +796,42 @@ class Main {
 </code>
 </pre>
 </div>
+Find min and maximum value from elements using arry and loop
+<div style="overflow-x:auto;">
+<pre>
+<code>
+    
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        double[] arr=new double[5];
+        double sum=0,max,min;
+        System.out.print("Enter 5 element:");
+       for (int i=0;i<arr.length; i++){
+           arr[i]=sc.nextDouble();
+       }for (int i=0;i<arr.length;i++){
+           sum=sum+arr[i];  
+       }max=arr[0];
+       for (int i=1;i<arr.length;i++ ){
+           if(max<arr[i]){
+               max=arr[i];
+           }
+       }
+       min=arr[0];
+       for (int i=1;i<arr.length;i++ ){
+           if(min>arr[i]){
+               min=arr[i];
+           }
+       } System.out.println("Sum of 5 elements:"+sum); 
+      System.out.println("maximum value is :"+max);
+      System.out.println("minimum value is :"+min);
+     System.out.println("length is :"+arr.length);     
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
