@@ -832,6 +832,26 @@ class Main {
 </code>
 </pre>
 </div>
+For Each loop:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+class Main {
+    public static void main(String[] args) {
+        int[] names={10,20,30,40};
+        int sum=0;
+        for (int x :names){
+            sum=sum+x;
+            System.out.println(x);
+        }
+        System.out.println("Length : "+names.length);
+        System.out.println("sum of no: "+sum);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
