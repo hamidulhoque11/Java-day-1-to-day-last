@@ -1,0 +1,196 @@
+
+-------------------pattern 1----------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your perretn value:");
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            System.out.println();
+            for(int j=1;j<=i;j++){
+                System.out.print(j+" ");
+            }
+           
+            }
+            
+        }
+    }
+/*
+output-
+123
+12
+1
+*/
+-------------------------------------------
+---------------------------pattern 2-------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your perretn value:");
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            System.out.println();
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+           
+            }
+            
+        }
+    }
+    /*
+    output-
+    ***
+    **
+    *
+    */
+---------------------------------------------------
+-----------------------------Pattern 3-------------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your perretn value:");
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            System.out.println();
+            for(int j=1;j<=i;j++){
+                System.out.print("#");
+            }
+           
+            }
+            
+        }
+    }
+    /*
+    output-
+    ###
+    ##
+    #
+    */
+--------------------------------------------------------------
+----------------------------pattern 4---------------------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your perretn value:");
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            System.out.println();
+            for(int j=1;j<=i;j++){
+                if(j%2==0){
+                System.out.print("0");
+            }
+            else{
+                System.out.print("1");
+            }
+            }
+            }
+            
+        }
+    }
+    /*
+    output-
+    101
+    10
+    1
+    */
+-------------------------------------------------------------------------
+-----------------------pattern 5----------------------------------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your perretn value:");
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            System.out.println();
+        for(int j=1;j<=i;j++){
+            System.out.print(i+" ");
+            }
+        } 
+    }
+ }
+    /*
+    output-
+    3 3 3
+    2 2
+    1
+    */
+-----------------------------------------------------------------------------
+-----------------------------------pattern 6-------------------------------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your perretn value:");
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            System.out.println();
+        if(i%2==0){
+        for(int j=1;j<=i;j++){
+            System.out.print("0 ");
+            }
+        }else{
+           for(int j=1;j<=i;j++){
+            System.out.print("1 ");
+            } 
+        }
+        } 
+    }
+ }
+    /*
+    output-
+    1 1 1
+    0 0
+    1
+    */
+-------------------------------------------------------------------
+-----------------------pattern 7-----------------------------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Small letter:");
+        char character=sc.next().charAt(0);
+        for(char i='a';i<=character;i++){
+            
+            for(char j='a';j<=i;j++){
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+/*
+output-
+    a
+    b b
+    c c c
+*/
+------------------------------------------------------------
+------------------------pattern 8-----------------------------
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Small letter:");
+        char character=sc.next().charAt(0);
+        for(char i='a';i<=character;i++){
+            
+            for(char j='a';j<=i;j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+/*
+output-
+    a
+    a b
+    a b c
+*/
