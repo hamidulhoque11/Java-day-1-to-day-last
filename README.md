@@ -877,6 +877,49 @@ class Main {
 </code>
 </pre>
 </div>
+**Matrix Take from user-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[][] a=new int[2][3];
+        int[][] b=new int[2][3];
+         System.out.println("Take matrix for A");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                System.out.printf("A[%d][%d] = ",i,j);
+                a[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("Take matrix for B");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                System.out.printf("B[%d][%d] = ",i,j);
+                b[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("A=");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                System.out.print(" "+a[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println("B=");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                System.out.print(" "+b[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
