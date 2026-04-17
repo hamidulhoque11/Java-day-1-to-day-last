@@ -920,6 +920,59 @@ class Main {
 </code>
 </pre>
 </div>
+Multiplication Matrix A+b
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int [][] b=new int[2][3];
+        int [][] a=new int[2][3];
+        int [][] c=new int[2][3];
+        System.out.println("--Matrix multiplication A+B--");
+        System.out.println("Take Matrix for A:");
+        for (int row=0;row<2;row++){
+            for(int column=0;column<3;column++){
+                System.out.printf("A[%d][%d] = ",row, column);
+                a[row][column]=sc.nextInt();  
+            }
+        }
+        System.out.println("Take Matrix for B:");
+        for (int row=0;row<2;row++){
+            for(int column=0;column<3;column++){
+                System.out.printf("B[%d][%d] = ",row, column);
+                b[row][column]=sc.nextInt();  
+            }
+        } 
+        for(char set='A';set<'C';set++){
+            System.out.println(set+" = ");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                if(set=='A'){
+                System.out.print("  "+a[i][j]);
+                }else{
+                    System.out.print("  "+b[i][j]);
+                }
+            }
+            System.out.println();
+        }
+        }
+        System.out.println("A + B =");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                c[i][j]=a[i][j]+b[i][j];
+                System.out.print(c[i][j]+"\t");
+            }
+            System.out.println();
+        }
+    }
+}
+</code>
+</pre>
+</div>
+
 
 
 
