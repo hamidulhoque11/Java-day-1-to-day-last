@@ -972,6 +972,43 @@ class Main {
 </code>
 </pre>
 </div>
+**Matrix find the sum of diagonal ,Upper And lower
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[][] a=new int[3][3];
+        int[][] b=new int[3][3];
+        int sumofdiagonal=0;
+        int sumofUpper=0;
+        int sumoflower=0;
+        System.out.println("Enter A Mtrix:");
+        for(int row=0;row<3;row++){
+            for(int column=0;column<3;column++){
+                System.out.printf("A[%d][%d] =",row,column);
+                a[row][column]=sc.nextInt();
+            }
+        }
+        for(int row=0;row<3;row++){
+            for(int column=0;column<3;column++){
+                System.out.print(a[row][column]+"\t");
+                 sumofdiagonal=a[0][0]+a[1][1]+a[2][2];
+                 sumofUpper=a[0][1]+a[0][2]+a[1][2];
+                 sumoflower=a[1][0]+a[2][0]+a[2][1];
+            }
+            System.out.println();
+        }
+        System.out.println("Sum of diagoal is: "+sumofdiagonal);
+        System.out.println("Sum of Uper triangle is: "+sumofUpper);
+        System.out.println("Sum of Lower triangle is: "+sumoflower);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
