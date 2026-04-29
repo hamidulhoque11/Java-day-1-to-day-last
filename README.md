@@ -1009,6 +1009,35 @@ class Main {
 </code>
 </pre>
 </div>
+Sorting Arrays-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+import java.util.Arrays;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[] Sort=new int[5];
+        System.out.println("Enter 5 Element:");
+        for(int i=0;i<5;i++){
+        Sort[i]=sc.nextInt();
+    }
+        System.out.println("BEFORE SORTING");
+    for(int i=0;i<5;i++){
+        System.out.print(Sort[i]+" ");
+    }
+    System.out.println();
+    System.out.println("AFTER SORTING");
+    Arrays.sort(Sort);
+    for(int i=0;i<5;i++){
+        System.out.print(Sort[i]+" ");
+    }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
