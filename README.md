@@ -1068,9 +1068,83 @@ class Main {
 </code>
 </pre>
 </div>
-
-
-
+isEmpty Method,contains method,Indexof method, set method, Get Method,size method of Array List:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.ArrayList;
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        ArrayList<Integer> numb=new ArrayList<Integer>();
+        System.out.println("Enter 5 Element");
+            numb.add(10);
+            numb.add(20);
+            numb.add(30);
+            numb.add(40);
+            numb.add(0,50);
+        System.out.print("Elements are - ");
+        for(int x:numb){
+        System.out.print(x+" ");
+        } 
+        System.out.println();
+         System.out.println("find 40 ,constains Method : "+numb.contains(40));
+        System.out.println("isEmpty Method : "+numb.isEmpty());
+        System.out.println("IndexOf Method(50) : "+numb.indexOf(50)+" NO of index");
+        System.out.println("After set Methos 2no index 20 replaice to 25");
+            numb.set(2,25);
+            for(int x:numb){
+        System.out.print(x+" ");
+        } 
+         System.out.println();
+        int x =numb.get(3);
+        System.out.println("Get Method = "+x);
+        int sizeOfArray=numb.size();
+       System.out.println("size of array = "+sizeOfArray);
+    }
+}
+</code>
+</pre>
+</div>
+Add All Method, Equals Method-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.ArrayList;
+class main{
+    public static void main(String[]args){
+        ArrayList<Integer>Arr1=new ArrayList<Integer>();
+        ArrayList<Integer>Arr3=new ArrayList<Integer>();
+        ArrayList<Integer>Arr2=new ArrayList<Integer>();
+        Arr1.add(10);
+        Arr1.add(15);
+        Arr1.add(25);
+        Arr1.add(20);
+        Arr1.add(9);
+        System.out.print("Array1 :"+Arr1);
+        System.out.println();
+        Arr2.add(12);
+        Arr2.add(70);
+        Arr2.add(3);
+        Arr2.add(11);
+        Arr2.add(90);
+        System.out.print("Array2 :"+Arr2);
+        System.out.println();
+        Arr3.addAll(Arr2);
+        System.out.println("Applaying Addall Method in Array3 :");
+        System.out.print("Array3 :"+Arr3);
+        System.out.println();
+        System.out.println("Applaying Equal Method Method  :");
+        boolean check=Arr1.equals(Arr2);
+        System.out.println("Array1==Array2 ? : "+check);
+        check=Arr2.equals(Arr3);
+        System.out.println("Array2==Array3 ? : "+check);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
