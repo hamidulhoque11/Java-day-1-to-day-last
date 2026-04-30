@@ -1038,7 +1038,36 @@ class Main {
 </code>
 </pre>
 </div>
-
+Array List- Add, Remove,Iterator
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.ArrayList;
+import java.util.Iterator;
+class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> elem=new ArrayList<Integer>();
+        elem.add(10);
+        elem.add(20);
+        elem.add(5);
+        elem.add(1,2);
+        System.out.println("Size of array- "+elem.size());
+        for(int x:elem){
+           System.out.print(x+" ");
+        }
+        System.out.println();
+        elem.remove(2);
+        Iterator itr=elem.iterator();
+        while(itr.hasNext()){
+            System.out.print(itr.next()+" ");
+        }
+        System.out.println();
+        System.out.println("Size of array- "+elem.size()); 
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
