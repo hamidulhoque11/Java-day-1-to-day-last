@@ -1181,6 +1181,32 @@ class Main {
 </code>
 </pre>
 </div>
+Method of String -concat(),toUpperCase(),toLowerCase,starstWith,endsWith
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+class Main {
+    public static void main(String[] args) {
+        String fastName="Hamidul ";
+        String lastName="Hoque Masum";
+        System.out.println("First name = "+fastName);
+        System.out.println("Last Name = "+lastName);
+        String fullName=fastName.concat(lastName);
+        System.out.println("concat Mathod: "+fullName);
+        String upercase=fullName.toUpperCase();
+        System.out.println("toUpperCase: "+upercase);
+        String lowercase=fullName.toLowerCase();
+        System.out.println("toLowerCase: "+lowercase);
+        boolean start=fullName.startsWith("H");
+        System.out.println("startsWith(H) : "+start);
+        boolean end=fullName.endsWith("l");
+        System.out.println("endsWith(l) :"+end);
+        }
+}
+</code>
+</pre>
+</div>
 
 
 
