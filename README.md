@@ -1145,6 +1145,42 @@ class main{
 </code>
 </pre>
 </div>
+Array List-Sort Method(Ascending,Descending)
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        ArrayList<Integer> arr=new ArrayList<Integer>();
+        System.out.println("Enter 5 element:");
+        for(int i=0;i<5;i++){
+            arr.add(sc.nextInt());
+        }
+        System.out.print("Before sorting ArrayList : ");
+        for(int x:arr){
+            System.out.print(x+" ");
+        }
+        System.out.println();
+        Collections.sort(arr);
+        System.out.print("After sorting ArrayList(Ascending) : ");
+        for(int x:arr){
+            System.out.print(x+" ");
+        }
+        System.out.println();
+        Collections.sort(arr,Collections.reverseOrder());
+        System.out.print("After sorting ArrayList(Descending) : ");
+        for(int x:arr){
+            System.out.print(x+" ");
+        }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
