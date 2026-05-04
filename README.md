@@ -1207,6 +1207,77 @@ class Main {
 </code>
 </pre>
 </div>
+Method of-chatAt(index value),indexOf,lastIndexOf(),indexof(),trim()-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+class Main {
+    public static void main(String[] args) {
+        String country="Bangladesh is my country and";
+        String countryOne="  Bangladesh is my    country and  ";
+        System.out.println(country);
+        System.out.println(countryOne);
+        System.out.println();
+        String removeSpace=countryOne.trim();
+        System.out.println("trim() Method(remove all fast and last space from String) :"+removeSpace);
+        int indexof = country.indexOf("my");
+        System.out.println("indexOf Method(find 'my' index): "+indexof);
+        int lastindexof=country.lastIndexOf("n");
+        System.out.println("lastIndexOf Method(Find last 'n') :"+lastindexof);
+        char charat=country.charAt(3);
+        System.out.println("charAt(3) Method(find 3 index character) : " +charat);
+    }
+}
+</code>
+</pre>
+</div>
+Method of split,replace(char,char)
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+class Main {
+    public static void main(String[] args) {
+       String country="I lobe my country";
+       System.out.println(country);
+        String replace=country.replace('b','v');
+        System.out.println("replace Method(b to v) : "+replace);
+        System.out.println("Split Method(Space)-");
+       String[] split=replace.split(" ");
+       for(String x: split){
+           System.out.print(x);
+       }
+    }
+}
+</code>
+</pre>
+</div>
+StringBuffer-Method of append,reverse,delete,setLength.
+<div style="overflow-x:auto;">
+<pre>
+<code>
+
+class Main {
+    public static void main(String[] args) {
+        StringBuffer name=new StringBuffer("Hamidul");
+        System.out.println(name);
+    name.append(" Hoque");
+    System.out.println("append( hoque) :"+name);
+    name.append(" Masum");
+    System.out.println("append( Masum) :"+name);
+    name.reverse();
+    System.out.println("reverse: "+name);
+    name.reverse();
+    name.delete(0,3);
+    System.out.println("delete 3 index: "+name);
+    name.setLength(12);
+    System.out.println("setLength(12) : "+name);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
