@@ -1278,6 +1278,29 @@ class Main {
 </code>
 </pre>
 </div>
+String Buffer-Solve a Palindrome problem
+<div style="overflow-x:auto;">
+<pre>
+<code>
+//Stirng Pelindrome
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter any value/string : ");
+        String check=sc.nextLine();
+        StringBuffer palindrome=new StringBuffer(check);
+       String reverse = palindrome.reverse().toString();
+       if(check.equals(reverse)){
+           System.out.println("its Palindrome");
+       }else{
+           System.out.println("not pelindrom");
+       }
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
