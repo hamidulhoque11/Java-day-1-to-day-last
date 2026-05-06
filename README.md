@@ -1301,6 +1301,49 @@ class Main {
 </code>
 </pre>
 </div>
+Convert pemeting to String or String to premeting data type-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Main {
+    public static void main(String[] args) {
+      int i=510;
+      String str=Integer.toString(i);
+      System.out.println("int to String :"+str);
+      double d=Double.parseDouble(str);
+      System.out.println("String to Double : "+d);
+      String v="5.3";
+      float s=Float.parseFloat(v);
+      System.out.println("String to Float : "+s);
+    String g="7.9";
+      float f=Float.valueOf(g);
+      System.out.println("String to Float : "+f);
+    }
+}
+</code>
+</pre>
+</div>
+Binary,octal,Hexa to Decimal value-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any binary value: ");
+        String str=sc.nextLine();
+        Integer binary=Integer.parseInt(str,2);
+        System.out.println("Binary to Decimal : "+binary);
+        Integer Octal =Integer.parseInt(str,8);
+        System.out.println("Octal to Decimal :"+Octal);
+        Integer hexa=Integer.parseInt(str,16);
+        System.out.println("Hexa to Decimal :"+hexa);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
