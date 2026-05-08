@@ -1367,7 +1367,25 @@ class Main {
 </code>
 </pre>
 </div>
-
+Date class-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+class main{
+    public static void main(String[]args){
+        Date date=new Date();
+        System.out.println("Date : "+date);
+        DateFormat df=new SimpleDateFormat("dd/MM/yyyy");
+        String dt=df.format(date);
+        System.out.println("Current Date : "+dt); 
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
