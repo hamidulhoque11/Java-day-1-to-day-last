@@ -1344,7 +1344,29 @@ class main{
 </code>
 </pre>
 </div>
-
+Decimal To binary, Octal, Hexa-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int decimal;
+        System.out.print("Enter a decimal value: ");
+        decimal =sc.nextInt();
+     System.out.println();
+     String binary=Integer.toBinaryString(decimal);
+     System.out.println("Binary : "+binary);
+     String octal=Integer.toOctalString(decimal);
+     System.out.println("Octal : "+octal);
+     String hexa=Integer.toHexString(decimal);
+     System.out.println("Hexa : "+hexa);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
