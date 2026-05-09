@@ -1386,7 +1386,24 @@ class main{
 </code>
 </pre>
 </div>
-
+Time Class-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+class main{
+    public static void main(String []args){
+        LocalTime lt= LocalTime.now();
+        System.out.println(lt);
+        DateTimeFormatter dtf=DateTimeFormatter.ofPattern("HH:mm:ss");
+        String currentTime=dtf.format(lt);
+        System.out.println(currentTime);
+    }
+}
+</code>
+</pre>
+</div>
 
 
 
