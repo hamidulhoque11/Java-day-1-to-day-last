@@ -1404,6 +1404,111 @@ class main{
 </code>
 </pre>
 </div>
-
-
-
+OOP -class, object:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Teacher{
+    String name,gender;
+    int age,phone;
+}
+class Main {
+    public static void main(String[] args) {
+        Teacher teacher=new Teacher();
+        System.out.println("1.");
+        teacher.name="Hamidul Hoque Masum";
+        teacher.age=24;
+        teacher.gender="Male";
+        teacher.phone=1956644483;
+        System.out.println("Name : "+teacher.name);
+        System.out.println("Age : "+teacher.age);
+        System.out.println("Gender : "+teacher.gender);
+        System.out.println("Phone : "+teacher.phone);
+         Teacher teacherOne=new Teacher();
+          System.out.println("2.");
+        teacherOne.name="Mufassir Mahmud";
+        teacherOne.age=24;
+        teacherOne.gender="Male";
+        teacherOne.phone=15439542;
+        System.out.println("Name : "+teacherOne.name);
+        System.out.println("Age : "+teacherOne.age);
+        System.out.println("Gender : "+teacherOne.gender);
+        System.out.println("Phone : "+teacherOne.phone);
+    }
+}
+</code>
+</pre>
+</div>
+Display Information Method inside a class
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Teacher{
+    String name,gender;
+    int age,phone;
+    void displayInformation(){
+        System.out.println("Name : "+name);
+        System.out.println("Age : "+age);
+        System.out.println("Gender : "+gender);
+        System.out.println("Phone : "+phone);
+        System.out.println();
+    } 
+}
+class Main {
+    public static void main(String[] args) {
+        Teacher teacher=new Teacher();
+        System.out.println("1.");
+        teacher.name="Hamidul Hoque Masum";
+        teacher.age=24;
+        teacher.gender="Male";
+        teacher.phone=1956644483;
+       teacher.displayInformation();
+         Teacher teacherOne=new Teacher();
+          System.out.println("2.");
+        teacherOne.name="Mufassir Mahmud";
+        teacherOne.age=24;
+        teacherOne.gender="Male";
+        teacherOne.phone=15439542;
+        teacherOne.displayInformation();
+    }
+}
+</code>
+</pre>
+</div>
+SetInformation : Parametrised Method
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Teacher{
+    String name,gender;
+    int age,phone;
+    void setInformation(String nam,int ag,String gen,int ph){
+        name=nam;
+        gender=gen;
+        age=ag;
+        phone=ph;
+    }
+    void displayInformation(){
+        System.out.println("Name : "+name);
+        System.out.println("Age : "+age);
+        System.out.println("Gender : "+gender);
+        System.out.println("Phone : "+phone);
+        System.out.println();
+    } 
+}
+class Main {
+    public static void main(String[] args) {
+        Teacher teacher=new Teacher();
+        teacher.setInformation("Hamidul Hoque Masum",24,"Male",1956644483);
+        System.out.println("1.");
+       teacher.displayInformation();
+       System.out.println();
+         Teacher teacherOne=new Teacher();
+        teacherOne.setInformation("Mufassir mahmud",24,"Male",1776364390);
+         System.out.println("2.");
+        teacherOne.displayInformation();
+    }
+}
+</code>
+</pre>
+</div>
