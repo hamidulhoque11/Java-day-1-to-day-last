@@ -1512,3 +1512,36 @@ class Main {
 </code>
 </pre>
 </div>
+Constructor
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+    String name,program,blood,dob;
+    int batch;
+  Student(String nam,String dpt,int btc,String bld,String d){
+        name=nam;
+        program=dpt;
+        batch=btc;
+        blood=bld;
+        dob=d;
+    }
+    void displayInformation(){
+        System.out.println("      "+name+"          ");
+        System.out.println("Program       : "+program);
+        System.out.println("Batch         : "+batch);
+        System.out.println("Date of birth : "+dob);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       Student student=new Student("Hamidul Hoque Masum","CSE",19,"O-","24/8/2002");
+       student.displayInformation();
+       System.out.println();
+       Student studentOne=new Student("Ahsan Habib","CSE",20,"AB+","5/3/2000");
+       studentOne.displayInformation();
+    }
+}
+</code>
+</pre>
+</div>
