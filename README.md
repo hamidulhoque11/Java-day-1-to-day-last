@@ -1545,3 +1545,44 @@ class Main {
 </code>
 </pre>
 </div>
+Constructor OverLoading
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+    String name,dept;
+    int batch,id;
+    Student(){
+        System.out.println("No Data");
+    }
+    Student(String nam,String dep ){
+        name=nam;
+        dept=dep;
+    }
+    Student(String nam,String dep,int bat, int d){
+        name=nam;
+        dept=dep;
+        batch=bat;
+        id=d;
+    }
+    void displayInformation(){
+        System.out.println("     "+name+"    ");
+        System.out.println("Id     : "+id);
+        System.out.println("Dep    : " +dept);
+        System.out.println("Batch  : "+batch);
+        System.out.println();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       Student student=new Student();
+       student.displayInformation();
+       Student studentOne=new Student("Hamidul hoque Masum","CSE");
+       studentOne.displayInformation();
+       Student studentTwo=new Student("Mufassir mahmud","CSE",19,42541);
+       studentTwo.displayInformation();    
+    }
+}
+</code>
+</pre>
+</div>
