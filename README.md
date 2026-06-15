@@ -1586,3 +1586,95 @@ class Main {
 </code>
 </pre>
 </div>
+static Variable--
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+    String name,id;
+    static String university="Southeast University";
+   void setData (String nm,String idn){
+        name=nm;
+        id=idn;
+    }
+    void displayInformation (){
+        System.out.println("     "+university+"      ");
+        System.out.println("Name    = "+name);
+        System.out.println("Id      = "+id);
+        System.out.println();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student stu1=new Student();
+        stu1.setData("Hamidul Hoque Masum","2024000010005");
+        stu1.displayInformation();
+        Student stu2=new Student();
+        stu2.setData("Mufassir Mahmud","2024000010025");
+        stu2.displayInformation();
+    }
+}
+</code>
+</pre>
+</div>
+Static variable without object-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+     static String university="southeast university";
+}
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Varsity Name : "+Student.university);
+    }
+}
+</code>
+</pre>
+</div>
+Count The object by static variable
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+     static int count=0;
+    Student(){
+        count++;
+    }
+    }
+class Main {
+    public static void main(String[] args) {
+        Student st=new Student();
+        Student st2=new Student();
+        Student st3=new Student();
+        Student st5=new Student();
+        int n=st5.count;
+        System.out.println("total student: "+n);
+    }
+}
+</code>
+</pre>
+</div>
+Static method--
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+    void display (){
+        System.out.println(" not Static method");
+    }
+    static void display2 (){
+        System.out.println("Static method");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student stu1=new Student();
+        stu1.display();
+        Student.display2();
+    }
+}
+</code>
+</pre>
+</div>
+
