@@ -1677,4 +1677,56 @@ class Main {
 </code>
 </pre>
 </div>
-
+Hiding instance variable-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Box{
+    int count=1;
+    double height,width,depth;
+     Box (double height,double width,double depth){
+        this.height=height;
+        this.width=width;
+        this.depth=depth;
+    }
+    void displayvol (){
+        double vol=height*width*depth;
+        System.out.println("Box : "+count);
+        System.out.println("Height : "+height);
+        System.out.println("Width : "+width);
+        System.out.println("Depth : "+depth);
+        System.out.println("Total vol is:"+vol);
+        System.out.println();
+      count ++;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Box box=new Box(10,10,10);
+        Box box1=new Box(20,30,10);
+        box.displayvol();
+        box1.displayvol();
+    }
+}
+</code>
+</pre>
+</div>
+Math class-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class main{
+    public static void main(String[]args){
+        System.out.println(Math.abs(-70));
+         System.out.println(Math.sqrt(9));
+         System.out.println(Math.PI);
+         System.out.println(Math.log(2.0));
+         System.out.println(Math.max(5,15));
+         System.out.println(Math.min(10,16));
+         System.out.println(Math.ceil(7.1));
+         System.out.println(Math.floor(7.1));
+    }
+}
+</code>
+</pre>
+</div>
