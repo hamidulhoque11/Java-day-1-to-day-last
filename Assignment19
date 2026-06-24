@@ -1,0 +1,36 @@
+/*Qustion-
+Create a class called Box that include three pieces of information 
+as instance variables- height, width and depth (type double) of two boxes. 
+Your class should have a constructor and initializes the three instance variables. 
+Provide a method displayVol that display the volume of two boxes. 
+Suppose, the values of instance variables for the first box's are (10,10,10) 
+and second box's are (20,30,10). Write a test application named BoxVolume that 
+demonstrate class Box's capabilities
+*/
+class Box{
+    int count=1;
+    double height,width,depth;
+     Box (double h,double w,double d){
+        height=h;
+        width=w;
+        depth=d;
+    }
+    void displayvol (){
+        double vol=height*width*depth;
+        System.out.println("Box : "+count);
+        System.out.println("Height : "+height);
+        System.out.println("Width : "+width);
+        System.out.println("Depth : "+depth);
+        System.out.println("Total vol is:"+vol);
+        System.out.println();
+      count ++;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Box box=new Box(10,10,10);
+        Box box1=new Box(20,30,10);
+        box.displayvol();
+        box1.displayvol();
+    }
+}
