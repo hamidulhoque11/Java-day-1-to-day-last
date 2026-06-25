@@ -1730,3 +1730,30 @@ class main{
 </code>
 </pre>
 </div>
+Method Overloading.
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class MethodOverloading{
+    void add (int a,int b){
+        System.out.println(a+b);
+    }void add (int a,int b,int c){
+        System.out.println(a+b+c);
+    }void add (double a,double b){
+        System.out.println(a+b);
+    }void add (){
+        System.out.println("nothing is there");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        MethodOverloading MOL =new MethodOverloading ();
+        MOL.add(5,10);
+        MOL.add(2.1,3.5);
+        MOL.add();
+        MOL.add(5,4,1);
+    }
+}
+</code>
+</pre>
+</div>
