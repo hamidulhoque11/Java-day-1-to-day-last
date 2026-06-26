@@ -1806,3 +1806,28 @@ class Main {
 </code>
 </pre>
 </div>
+Variable Length Argument:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class variableLen{
+    void add(int ... length){
+        int sum=0;
+        for(int i:length){
+           sum= sum+i;
+        }
+        System.out.println(sum);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        variableLen len = new variableLen();
+        len.add(100,90,20);
+        len.add(50,20);
+        len.add(50,20);
+        len.add(100,90,5,5,50,20);
+    }
+}
+</code>
+</pre>
+</div>
