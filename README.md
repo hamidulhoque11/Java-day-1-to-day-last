@@ -1757,3 +1757,52 @@ class Main {
 </code>
 </pre>
 </div>
+Call By Value:
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class callByValue{
+    void add (int i){
+        i=100;
+        System.out.println("in method: "+i);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        callByValue cbv =new callByValue();
+        int x=2;
+        System.out.println("value of x : "+x);
+         cbv.add(x);
+        System.out.println("value of x : "+x);
+    }
+}
+</code>
+</pre>
+</div>
+Call By Refference-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class callByReff{
+    String name;
+    void add (callByReff cbvOne){
+        cbvOne.name = "Hoque";
+        System.out.println("in add method: "+name);
+    }
+    void check (){
+        System.out.println("check:"+name);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        callByReff cbv =new callByReff();
+        cbv.name="Hamidul";
+        System.out.println("normal -"+cbv.name);
+        cbv.add(cbv);
+        System.out.println("normal 2 -"+cbv.name);
+        cbv.check();
+    }
+}
+</code>
+</pre>
+</div>
