@@ -1831,3 +1831,27 @@ class Main {
 </code>
 </pre>
 </div>
+Recursion-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class recursion{
+    int fact (int n){
+        if(n==1){
+            return 1;
+        }
+            else{
+               return n*fact(n-1);
+        }
+    }
+   
+}
+class Main {
+    public static void main(String[] args) {
+       recursion rec =new recursion();
+       System.out.println(rec.fact(4));
+    }
+}
+</code>
+</pre>
+</div>
