@@ -1855,3 +1855,28 @@ class Main {
 </code>
 </pre>
 </div>
+Encapsulation-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class interFace{
+  private  String userId;
+  private  String passWord;
+ public  void setName(String userId, String passWord){
+        this.userId=userId;
+       this.passWord=passWord;
+    }
+   public String getName(){
+         return userId+"\n"+ passWord;
+    }  
+}
+class Main {
+    public static void main(String[] args) {
+        interFace inf =new interFace();
+        inf.setName("hamidul5020","54554");
+       System.out.println(inf.getName());
+    }
+}
+</code>
+</pre>
+</div>
