@@ -1880,3 +1880,126 @@ class Main {
 </code>
 </pre>
 </div>
+Inheritance-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class person{
+    String name;
+    int id;
+    String blood;
+    void displayPerson(){
+        System.out.println("Name    : "+name);
+        System.out.println("ID      : "+id);
+        System.out.println("Blood   : "+blood);
+    }
+}
+class student extends person{
+    String depertment;
+    int batch;
+    void displayStudent(){
+        displayPerson();
+        System.out.println("Depertment : "+depertment);
+        System.out.println("batch   : "+batch);
+        System.out.println();
+    }
+}
+class Teacher extends person{
+    String depertment;
+    int salary;
+    void displayTeacher(){
+        displayPerson();
+        System.out.println("Depertment : "+depertment);
+        System.out.println("slary   : "+salary);
+        System.out.println();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        person pr=new person();
+        student st=new student();
+    // for student-
+        st.name="Hamidul Hoque Masum";
+        st.id=0005;
+        st.blood="o-";
+        st.depertment="CSE";
+        st.batch=19;
+        st.displayStudent();
+     //for teacher-
+        Teacher teach=new Teacher();
+        teach.name="Anisul Islam sir";
+        teach.id=61;
+        teach.blood="AB+";
+        teach.depertment="CSE";
+        teach.salary=75000;
+        teach.displayTeacher();
+    }
+}
+</code>
+</pre>
+</div>
+Inheriting Private Member-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class person{
+ private   String name;
+            int id;
+            String blood;
+           public void setName(String name){
+                this.name=name;
+            }
+            public String getName(){
+                return name;
+            }
+    void displayPerson(){
+       System.out.println("Name    : "+name);
+        System.out.println("ID      : "+id);
+        System.out.println("Blood   : "+blood);
+    }
+}
+class student extends person{
+    String depertment;
+    int batch;
+    void displayStudent(){
+        System.out.println("ID      : "+id);//
+        System.out.println("Blood   : "+blood);
+        System.out.println("Depertment : "+depertment);
+        System.out.println("batch   : "+batch);
+        System.out.println();
+    }
+}
+class Teacher extends person{
+    String depertment;
+    int salary;
+    void displayTeacher(){
+        displayPerson();//call by method
+        System.out.println("Depertment : "+depertment);
+        System.out.println("slary   : "+salary);
+        System.out.println();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        person pr=new person();
+        student st=new student();
+        st.setName("Hamidul Hoque Masum");//setter
+        System.out.println("Name :"+st.getName());//getter
+        st.id=0005;
+        st.blood="o-";
+        st.depertment="CSE";
+        st.batch=19;
+        st.displayStudent();
+        Teacher teach=new Teacher();
+        teach.setName("Anisul Islam sir");//setter
+        teach.id=61;
+        teach.blood="AB+";
+        teach.depertment="CSE";
+        teach.salary=75000;
+        teach.displayTeacher();
+    }
+}
+</code>
+</pre>
+</div>
+instance of operator-
