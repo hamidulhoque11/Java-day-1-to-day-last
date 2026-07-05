@@ -2002,4 +2002,25 @@ class Main {
 </code>
 </pre>
 </div>
-instance of operator-
+Super keyword-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class person{
+    int x=10;
+}
+class Student extends person{
+    int x=4;
+    void display(){
+        System.out.println(super.x);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student st=new Student();
+        st.display();
+    }
+}
+</code>
+</pre>
+</div>
