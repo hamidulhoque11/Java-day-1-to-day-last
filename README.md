@@ -2024,3 +2024,70 @@ class Main {
 </code>
 </pre>
 </div>
+how to call construction by super class
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class A{
+    A (){
+        System.out.println("Class A");
+    }
+}
+class B extends A{
+    B (){
+        super();
+        System.out.println("Class B");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        B b=new B();
+    }
+}
+</code>
+</pre>
+</div>
+super class parameter,costructor, mehod  
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class motorCycle {
+    String name;
+    String version;
+    double price;
+     motorCycle(String n, String v,double p){
+        name=n;
+        version=v;
+        price=p;
+    }
+    void display(){
+        System.out.println("Name : "+name);
+        System.out.println("Version : "+version);
+        System.out.println("Price : "+price); 
+    }
+}
+class Scooty extends motorCycle{
+    String Electric;
+    Scooty(String n, String v,double p, String e){
+        super(n,v,p);//super paramiter and constructor
+        Electric=e;
+    }
+    @Override//Override
+   void display(){
+        super.display();//super method
+        System.out.println("Electric : "+Electric);
+        System.out.println();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        motorCycle mc=new motorCycle("Ymaha R15","V3",500000);
+      mc.display();
+      System.out.println();
+      Scooty sc=new Scooty ("Ymaha Ray","ZR 125 Fi",270000,"yes");
+      sc.display();
+    }
+}
+</code>
+</pre>
+</div>
