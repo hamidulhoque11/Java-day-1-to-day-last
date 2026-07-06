@@ -2091,3 +2091,44 @@ class Main {
 </code>
 </pre>
 </div>
+this keyword-(call constuctor, parameter,mehod and variable)
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Employee{
+    String name,blood,dob;
+    int id;
+    double salary;
+   Employee(String name, int id,String blood,String dob){
+       this.name=name;
+       this.id=id;
+       this.blood=blood;
+       this.dob=dob;
+   }
+   Employee(String name, int id,String blood,String dob,double salary){
+       this(name,id,blood,dob);
+       this.salary=salary;
+}
+void display(){
+    System.out.println("Name :"+name);
+    System.out.println("id :"+id);
+    System.out.println("Blood :"+blood);
+    System.out.println("Date of Birth :"+dob);
+}
+void display2(){
+    this.display();
+    System.out.println("Salary :"+salary);
+}
+}
+class Main {
+    public static void main(String[] args) {
+      Employee em=new Employee("Hamidul Hoque masum",5452,"o-","03-05-2000");
+      em.display();
+      System.out.println();
+      Employee em2=new Employee("Hamidul Hoque masum",5452,"o-","03-05-2000",20000);
+      em2.display2();
+    }
+}
+</code>
+</pre>
+</div>
