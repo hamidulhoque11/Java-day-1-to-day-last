@@ -2162,3 +2162,33 @@ class Main {
 </code>
 </pre>
 </div>
+Final Method and class
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class student{// we cant extent final class
+    String name="hamidul";
+    int id=514;
+   final void display(){// final method
+        System.out.println(name);
+        System.out.println(id);
+    }
+}
+class teacher extends student{
+    void display1(){
+        name="ashik";
+         System.out.println(name);
+        System.out.println(id);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        teacher tc=new teacher();
+        tc.display();
+        System.out.println();
+        tc.display1();
+    }
+}
+</code>
+</pre>
+</div>
