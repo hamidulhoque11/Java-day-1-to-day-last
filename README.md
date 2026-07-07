@@ -2132,3 +2132,33 @@ class Main {
 </code>
 </pre>
 </div>
+final Variable(normally final ,blank ,static)-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class Student{
+         final String name="hamidul";// normal final 
+         final int id;  //blank final keyword
+       static final int batch;// static blank final keyword
+    Student(){
+        id=10005;
+    }
+    static{
+        batch=19;
+    }
+    void display(){
+       //id=5; not working in final final key.
+        System.out.println(name);
+        System.out.println(id);
+        System.out.println(batch);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student st=new Student();
+        st.display();
+    }
+}
+</code>
+</pre>
+</div>
