@@ -2224,4 +2224,50 @@ class Main {
 </code>
 </pre>
 </div>
+Area of Rectangle and Triangle-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class shape{
+   double area(){
+       System.out.print("Area : ");
+       return 0;
+   } 
+}
+class rectAngle extends shape{
+    double length,width;
+    rectAngle(double length, double width){
+        this.length=length;
+        this.width=width;
+    }
+   double area(){
+       System.out.print("Rectangle : ");
+       return length*width;
+   }  
+}
+class triAngle extends shape{
+    double base,height;
+    triAngle(double base,double height){
+        this.base=base;
+        this.height=height;
+    }
+    double area(){
+        System.out.print("Triangle : ");
+       return 0.5*base*height;
+   } 
+}
+class Main {
+    public static void main(String[] args) {
+        shape[] sp=new shape[3];
+        sp[0]=new shape();
+       sp[1]=new rectAngle(5,10);
+        sp[2]=new triAngle(10,5);
+        for(int i=0;i<3;i++){
+           System.out.println(sp[i].area()); 
+        }  
+    }
+}
+</code>
+</pre>
+</div>
 
