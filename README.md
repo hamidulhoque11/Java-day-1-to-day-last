@@ -2192,3 +2192,36 @@ class Main {
 </code>
 </pre>
 </div>
+Dynamic Polymorphysm-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class person{
+    void display(){
+        System.out.println("i am a person");
+    }
+}
+class teacher extends person{
+    void display(){
+        System.out.println("i am a teacher");
+    }
+}
+class student extends person{
+    void display(){
+    System.out.println("i am student");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        person p =new person();
+        p.display();
+        p=new teacher();
+        p.display();
+        p=new student();
+        p.display();   
+    }
+}
+</code>
+</pre>
+</div>
+
