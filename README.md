@@ -2270,4 +2270,33 @@ class Main {
 </code>
 </pre>
 </div>
+Abstruct class,Mehod
+<div style="overflow-x:auto;">
+<pre>
+<code>
+abstract class mobileUser{//abstract class
+    abstract void massage();//abstract method
+}
+class rahim extends mobileUser{
+    void massage(){
+        System.out.println("hello rahim");
+    }
+}
+class karim extends mobileUser{
+    void massage(){
+        System.out.println("hello karim");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        mobileUser mu;
+        mu =new rahim();
+        mu.massage();
+        mu=new karim();
+        mu.massage();
+    }
+}
+</code>
+</pre>
+</div>
 
