@@ -2299,4 +2299,61 @@ class Main {
 </code>
 </pre>
 </div>
+            Aria of triangle,rectangle, circle -by abstraction
+<div style="overflow-x:auto;">
+<pre>
+<code>
+abstract class shape{
+    double value,valueOne;
+    shape(double value,double valueOne){
+        this.value=value;
+        this.valueOne=valueOne;
+    }
+    abstract void area();
+    
+}
+class rectangle extends shape{
+    rectangle(double value, double valueOne){
+        super(value,valueOne);
+    }
+     void area(){
+         double a=value*valueOne;
+        System.out.println("Area of rectangle :"+a);
+    }
+}
+class triangle extends shape{
+   
+   triangle(double value, double valueOne){
+       super(value,valueOne);
+   }
+     void area(){
+        double a=0.5*value*valueOne;
+        System.out.println("Area of Triangle :"+a);
+    }
+}
+class circle extends shape{
+    double redius;
+    circle(double value){
+        super(value,value);
+    }
+    void area(){
+        double a =3.1416*(value*value);
+        System.out.println("Area of circle:"+a);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+      shape sh;
+     // sh=new shape();
+      sh=new rectangle(4,2);
+      sh.area();
+      sh=new triangle(7,10);
+      sh.area();
+      sh=new circle(2);
+      sh.area();
+    }
+}
+</code>
+</pre>
+</div>
 
