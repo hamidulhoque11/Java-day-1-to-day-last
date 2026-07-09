@@ -2356,4 +2356,25 @@ class Main {
 </code>
 </pre>
 </div>
+Interface-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+interface parents{
+    abstract void family();
+}
+class child implements parents{
+    public void family(){
+        System.out.println("child");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        child c=new child();
+        c.family();
+    }
+}
+</code>
+</pre>
+</div>
 
