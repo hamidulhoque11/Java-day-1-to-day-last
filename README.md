@@ -2377,4 +2377,26 @@ class Main {
 </code>
 </pre>
 </div>
+Annoymous class-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+class student{
+    void display(){
+        System.out.println("I am a Student");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        student st=new student(){ // this is the annoymous class
+            void display(){
+                System.out.println("Hamidul");
+            }
+        };
+        st.display();
+    }
+}
+</code>
+</pre>
+</div>
 
