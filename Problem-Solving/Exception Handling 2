@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class tryCatch {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int count=1;
+       do{
+           try {
+               int numb1, numb2,result;
+               System.out.print("please enter numb1:");
+               numb1=sc.nextInt();
+               System.out.print("please enter numb2:");
+               numb2=sc.nextInt();;
+               result=numb1/numb2;
+               System.out.println("Result"+numb1+"/"+numb2+"="+result);
+               count=2;
+           }catch (Exception e){
+               System.out.println("Exception :"+e);
+               System.out.println("you must enter interger.please try again please enter in number");
+               sc.nextLine();
+           }
+
+       }while(count==1);
+
+    }
+}
