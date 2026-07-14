@@ -1,0 +1,38 @@
+import java.util.LinkedList;
+import java.util.LinkedList;
+class StudentList {
+    String name;
+    int id;
+    String program;
+    StudentList(String name,int id,String program){
+        this.name=name;
+        this.id=id;
+        this.program=program;
+    }
+}
+class Main {
+    public static void main(String[] args){
+        //create Linked List
+        LinkedList<StudentList> sl=new LinkedList<>();
+        //creat oop
+        StudentList st=new StudentList("Hamidul Hoque Masum",10005,"CSE");
+        StudentList st1=new StudentList("Mufassir Mahmud",10006,"CSE");
+        StudentList st2=new StudentList("MD. Sohan",10007,"CSE");
+        StudentList st3=new StudentList("Dewan Akib Mahmud",10008,"CSE");
+        //adding data to list
+        sl.add(st);
+        sl.add(st1);
+        sl.add(st2);
+        sl.add(st3);
+        //Print 
+       int count=1;
+            for (StudentList x : sl) {
+                System.out.println("No:"+count);
+                System.out.println(x.name);
+                System.out.println(x.id);
+                System.out.println(x.program);
+                System.out.println();
+                count++;
+            }
+    }
+}
