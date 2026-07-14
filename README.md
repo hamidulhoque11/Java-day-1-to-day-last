@@ -2399,4 +2399,33 @@ class Main {
 </code>
 </pre>
 </div>
+Linked List-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+package linkedList;
+import java.util.LinkedList;
+public class test {
+    public  static void main(String[] args){
+        LinkedList<String> em=new LinkedList<>();
+        em.add("Bangladesh");
+        em.add("india");
+        em.add("Afganisthan");
+        em.add("sri lanka");
+        em.add("America");
+        em.addFirst("swizerland");
+        em.addLast("norway");
+        for(String x: em){
+            System.out.println(x);
+        }
+        em.remove(3);
+        System.out.println();
+        for(String x: em){
+            System.out.println(x);
+        }
+    }
+}
+</code>
+</pre>
+</div>
 
