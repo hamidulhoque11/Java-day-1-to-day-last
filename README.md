@@ -2496,4 +2496,66 @@ public class file {
 </code>
 </pre>
 </div>
+how to write into file
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.Formatter;
+import java.util.Scanner;
+public class formatter {
+    public static void main(String[] args){
+        String  name;
+        int id;
+        Scanner sc=new Scanner(System.in);
+        try {
+            Formatter format = new Formatter("E:/my java/Person/Student.text");
+            System.out.print("how many student you insert :");
+            int n=sc.nextInt();
+            for(int i=1;i<=n;i++){
+                System.out.println("Enter student id and name:");
+                id=sc.nextInt();
+                name=sc.next();
+                format.format("%s %s\r\n",id,name);
+            }
+            format.close();
+        } catch (FileNotFoundException e) {
+            System.out.println(e);
+        }
+    }
+    }
+
+
+</code>
+</pre>
+</div>
+How to read from file-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.io.File;
+import java.util.Scanner;
+public class reader {
+    public static void main(String[] args){
+        try {
+            File fl=new File("E:/my java/Person/Student.text");
+            Scanner sc= new Scanner(fl);
+            int count =1;
+            while (sc.hasNext()){
+                System.out.println("NO:"+count);
+                String id=sc.next();
+                String name=sc.next();
+                System.out.println("Name : "+name+"\nID:"+id);
+                System.out.println();
+                count++;
+            }
+            sc.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+
+</code>
+</pre>
+</div>
 
