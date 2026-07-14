@@ -2428,4 +2428,72 @@ public class test {
 </code>
 </pre>
 </div>
+HashMap-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.HashMap;
+public class test {
+    public static void main(String[] args){
+        HashMap<Integer,String> customer=new HashMap<Integer,String>();
+        customer.put(1001,"Hamidul");
+        customer.put(1002,"akib");
+        customer.put(1003,"sohan");
+        customer.put(1004,"apurba");
+        System.out.println(customer.get(1003));
+    }
+}
+</code>
+</pre>
+</div>
+HashSet-
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.util.HashSet;
+public class fruits {
+    public static void main(String[] args){
+        HashSet<String> fruitsName=new HashSet<String>();
+        fruitsName.add("Apple");
+        fruitsName.add("Mango");
+        fruitsName.add("Watermilon");
+        fruitsName.add("Benena");
+        fruitsName.add("Orange");
+        System.out.println(fruitsName);
+       fruitsName.remove("Watermilon");
+     System.out.println(fruitsName);
+     fruitsName.clear();
+     System.out.println(fruitsName.isEmpty());
+    }
+}
+
+</code>
+</pre>
+</div>
+how to create File/directory
+<div style="overflow-x:auto;">
+<pre>
+<code>
+import java.io.File;
+public class file {
+    public static void main(String[]args){
+        File f=new File("C:/Users/Administrator/Desktop/Student");
+        f.mkdir();//create a file name Student;
+        System.out.println(f.getAbsolutePath());// file location
+        try{
+            File f2=new File("Person");
+            f2.mkdir();
+            String path=f2.getAbsolutePath();
+            File f3=new File(path+"/Student.text");
+            f3.createNewFile();
+            System.out.println(f3.getAbsolutePath());
+            System.out.println("File creating done");
+        }catch (Exception e){
+        }
+    }
+}
+
+</code>
+</pre>
+</div>
 
